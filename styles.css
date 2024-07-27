@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #000000;
+  height: 100%;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#eighty {
+  width: 80%;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  border: 3px solid black;
+  height: 50dvh;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#headerImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #000000;
+  border-bottom: 3px outset red;
+  border-top: 3px outset rgb(255, 255, 255);
+  border-left: 3px solid rgb(230, 228, 228);
+  border-right: 3px solid rgb(255, 255, 255);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 17px 23px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 32%;
+  background-color: #0c0c0c;
+  padding: 10px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 1px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.about h4 {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.about p {
+  font-size: 12px;
+}
+
+.centeredText {
+  width: 85%;
+  text-align: center;
+}
+
+#aboutImages {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.images {
+  width: 23%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 2px;
+  object-fit: cover;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+}
+
+.leftHighlighted {
+  background-color: orange;
+  margin: 10px 0px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mangaInfo {
+  width: 65%;
+  text-align: right;
+}
+
+.mangaInfo h3 {
+  color: rgb(45, 45, 255);
+  font-size: 15px;
+  margin-bottom: -10px;
+}
+
+.author {
+  font-size: 13.5px;
+}
+
+.status {
+  font-size: 12px;
+  margin-bottom: -13px;
+}
+
+.mangaInfo h6 {
+  color: rgb(45, 45, 255);
+  padding-bottom: 15px;
+}
+
+.mangaImng {
+  width: 35%;
+}
+
+.mangaImng img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main column */
+.main {
+  flex: 68%;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+  border: 1px solid grey;
+  border-top: none;
+  border-left: #000000;
+}
+
+#containerForSwitchImg {
+  height: 48vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#containerForSwitchImg img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.separator {
+  background-color: orange;
+  height: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+  color: white;
+}
+
+.released {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 172px;
+  height: 200px;
+  margin: 3px;
+  text-align: center;
+  position: relative;
+}
+
+.cardMangaTitle {
+  background-color: rgb(73, 73, 73);
+  padding: 8px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.cardChapter {
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  color: orange;
+  background-blend-mode: overlay;
+  z-index: 1;
+}
+
+.cardImg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #0e0b0b;
+  color: white;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+}
+
+.footerLeft {
+  flex: 50%;
+  background: rgb(0, 0, 0);
+}
+
+.footerLeft {
+  font-size: 12px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.footerLeft a {
+  color: blue;
+  text-decoration: none;
+}
+
+.footerLeft a:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 170);
+}
+
+.footerRight {
+  flex: 50%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.icon img:hover {
+  margin-top: -5px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+  .header {
+    height: 30dvh;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    border-left: none;
+    border-right: none;
+
+  }
+
+  #eighty {
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .separator {
+    height: 20px;
+  }
+
+  .card {
+
+    width: 159px;
+    height: 187px;
+    margin: 3px;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #eighty {
+    width: 100%;
+  }
+  .card {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .card {
+    width: 32%;
+  }
+  .cardMangaTitle{
+    font-size: 15px;
+  }
+  .cardChapter{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 509px) {
+
+  .header {
+    height: 30dvh;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+    border-left: none;
+    border-right: none;
+  }
+
+  #eighty {
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .separator {
+    height: 20px;
+  }
+
+  .card {
+    width: 31%;
+    height: 164px;
+    margin: 3px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardMangaTitle{
+    font-size: 12px;
+  }
+  .cardChapter{
+    font-size: 10px;
+  }
+}
+
+.otherSection h2{
+  text-align: center;
+  padding: 50px;
+  font-size: 70px;
+  color: orange;
+  letter-spacing: 10px;
+}
